@@ -1,5 +1,9 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
+    ext{
+        retrofit_version = '2.9.0'
+        ok_http_version = '5.0.0-alpha.2'
+    }
     repositories {
         google()
         mavenCentral()
