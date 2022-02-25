@@ -1,12 +1,22 @@
 package com.example.himovie.api
 
-interface Config {
-    //https://api.themoviedb.org/3
+import retrofit2.Retrofit
+import retrofit2.converter.gson.GsonConverterFactory
 
-    fun url(): String
-}
-object DevConfig : Config {
-    override fun url(): String {
-        return "https://api.themoviedb.org/3"
-    }
+object Config {
+
+    var URL_BASE = "https://api.themoviedb.org/3/"
+
+    private var retrofit: Retrofit? = null
+
+    val apiService: ApiService
+        get() {
+            if (retrofit == null) {
+                retrofit = Retrofit.Builder()
+                    .baseUrl(URL_BASE)
+                    .addConverterFactory(GsonConverterFactory.create())
+                    .build()
+            }
+            return retrofit!!.create(ApiService::class.java)
+        }
 }
