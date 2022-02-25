@@ -1,5 +1,6 @@
 package com.example.himovie.api
 
+import com.example.himovie.data.ExResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
