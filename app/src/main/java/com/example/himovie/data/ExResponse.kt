@@ -1,4 +1,4 @@
-package com.example.himovie.api
+package com.example.himovie.data
 
 import com.google.gson.annotations.SerializedName
 

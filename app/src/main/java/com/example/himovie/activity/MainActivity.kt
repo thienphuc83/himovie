@@ -5,7 +5,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.himovie.R
 import com.example.himovie.api.Config
-import com.example.himovie.api.ExResponse
+import com.example.himovie.data.ExResponse
 import kotlinx.android.synthetic.main.activity_main.*
 import retrofit2.Call
 import retrofit2.Callback
