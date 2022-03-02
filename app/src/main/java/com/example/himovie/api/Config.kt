@@ -6,7 +6,6 @@ import retrofit2.converter.gson.GsonConverterFactory
 object Config {
 
     var URL_BASE = "https://api.themoviedb.org/3/"
-
     private var retrofit: Retrofit? = null
 
     val apiService: ApiService
